@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-22" view-index="0" gantt-divider-location="361" resource-divider-location="300" version="2.8.5" locale="fr">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="187" order="0"/>
+        <field id="tpd4" name="Date de début" width="85" order="1"/>
+        <field id="tpd5" name="Date de fin" width="85" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelLeft" value="advancement"/>
+        <option id="color.recent"><![CDATA[#ff00ff #cc66ff #ff0000 #00ff00 #000000 #66ccff #99ff99 #ffff66 #ffff99 #ffcc66]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Switzerland">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"/>
+        <date year="" month="1" date="2" type="HOLIDAY"/>
+        <date year="" month="8" date="1" type="HOLIDAY"/>
+        <date year="" month="12" date="25" type="HOLIDAY"/>
+        <date year="" month="12" date="26" type="HOLIDAY"/>
+        <date year="2012" month="4" date="6" type="HOLIDAY"/>
+        <date year="2012" month="4" date="8" type="HOLIDAY"/>
+        <date year="2012" month="4" date="9" type="HOLIDAY"/>
+        <date year="2012" month="5" date="17" type="HOLIDAY"/>
+        <date year="2012" month="5" date="27" type="HOLIDAY"/>
+        <date year="2012" month="5" date="28" type="HOLIDAY"/>
+        <date year="2018" month="2" date="19" type="HOLIDAY"><![CDATA[Vacances sur 19/02/18 00:00]]></date>
+        <date year="2018" month="2" date="18" type="HOLIDAY"><![CDATA[Vacances sur 18/02/18 00:00]]></date>
+        <date year="2018" month="2" date="17" type="HOLIDAY"><![CDATA[Vacances sur 17/02/18 00:00]]></date>
+        <date year="2018" month="2" date="20" type="HOLIDAY"><![CDATA[Vacances sur 20/02/18 00:00]]></date>
+        <date year="2018" month="2" date="21" type="HOLIDAY"><![CDATA[Vacances sur 21/02/18 00:00]]></date>
+        <date year="2018" month="2" date="22" type="HOLIDAY"><![CDATA[Vacances sur 22/02/18 00:00]]></date>
+        <date year="2018" month="2" date="23" type="HOLIDAY"><![CDATA[Vacances sur 23/02/18 00:00]]></date>
+        <date year="2018" month="2" date="24" type="HOLIDAY"><![CDATA[Vacances sur 24/02/18 00:00]]></date>
+        <date year="2018" month="2" date="25" type="HOLIDAY"><![CDATA[Vacances sur 25/02/18 00:00]]></date>
+        <date year="2018" month="3" date="30" type="HOLIDAY"><![CDATA[Vacances sur 30/03/18 00:00]]></date>
+        <date year="2018" month="3" date="31" type="HOLIDAY"><![CDATA[Vacances sur 31/03/18 00:00]]></date>
+        <date year="2018" month="4" date="1" type="HOLIDAY"><![CDATA[Vacances sur 01/04/18 00:00]]></date>
+        <date year="2018" month="4" date="2" type="HOLIDAY"><![CDATA[Vacances sur 02/04/18 00:00]]></date>
+        <date year="2018" month="4" date="3" type="HOLIDAY"><![CDATA[Vacances sur 03/04/18 00:00]]></date>
+        <date year="2018" month="4" date="4" type="HOLIDAY"><![CDATA[Vacances sur 04/04/18 00:00]]></date>
+        <date year="2018" month="4" date="5" type="HOLIDAY"><![CDATA[Vacances sur 05/04/18 00:00]]></date>
+        <date year="2018" month="4" date="15" type="HOLIDAY"><![CDATA[Vacances sur 15/04/18 00:00]]></date>
+        <date year="2018" month="4" date="14" type="HOLIDAY"><![CDATA[Vacances sur 14/04/18 00:00]]></date>
+        <date year="2018" month="4" date="13" type="HOLIDAY"><![CDATA[Vacances sur 13/04/18 00:00]]></date>
+        <date year="2018" month="4" date="12" type="HOLIDAY"><![CDATA[Vacances sur 12/04/18 00:00]]></date>
+        <date year="2018" month="4" date="11" type="HOLIDAY"><![CDATA[Vacances sur 11/04/18 00:00]]></date>
+        <date year="2018" month="4" date="10" type="HOLIDAY"><![CDATA[Vacances sur 10/04/18 00:00]]></date>
+        <date year="2018" month="4" date="9" type="HOLIDAY"><![CDATA[Vacances sur 09/04/18 00:00]]></date>
+        <date year="2018" month="4" date="8" type="HOLIDAY"><![CDATA[Vacances sur 08/04/18 00:00]]></date>
+        <date year="2018" month="4" date="7" type="HOLIDAY"><![CDATA[Vacances sur 07/04/18 00:00]]></date>
+        <date year="2018" month="4" date="6" type="HOLIDAY"><![CDATA[Vacances sur 06/04/18 00:00]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="21" name="Début du projet" color="#00ff00" meeting="true" start="2018-01-29" duration="0" complete="0" expand="true"/>
+        <task id="4" name="Documentation" color="#999999" meeting="false" start="2018-01-29" duration="44" complete="0" expand="true"/>
+        <task id="0" name="Analyse" color="#ff6666" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <task id="42" name="Cahier des charges détaillé" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true"/>
+            <task id="49" name="Cas d'utilisation" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true"/>
+            <task id="54" name="Sénarios" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true"/>
+            <task id="51" name="Planification détaillée" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true"/>
+            <task id="53" name="WireFrames" meeting="false" start="2018-01-22" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-01-23" duration="5" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Réalisation" color="#99ff99" meeting="false" start="2018-01-30" duration="15" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Procédures de tests" color="#66ccff" meeting="false" start="2018-02-27" duration="5" complete="0" expand="true">
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="40" name="Mise en service" color="#8cb6ce" meeting="false" start="2018-03-06" duration="4" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Préparation présentation" color="#000000" meeting="false" start="2018-03-12" duration="5" complete="0" expand="true"/>
+        <task id="24" name="Fin du projet" color="#ff0000" meeting="true" start="2018-04-20" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

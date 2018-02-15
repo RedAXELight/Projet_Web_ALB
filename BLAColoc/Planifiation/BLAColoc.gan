@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-22" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-22" view-index="0" gantt-divider-location="430" resource-divider-location="300" version="2.8.5" locale="fr">
     <description/>
     <view zooming-state="default:6" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="167" order="0"/>
-        <field id="tpd4" name="Date de début" width="65" order="1"/>
-        <field id="tpd5" name="Date de fin" width="64" order="2"/>
+        <field id="tpd3" name="Nom" width="240" order="0"/>
+        <field id="tpd4" name="Date de début" width="84" order="1"/>
+        <field id="tpd5" name="Date de fin" width="87" order="2"/>
         <option id="taskLabelUp" value="name"/>
         <option id="taskLabelLeft" value="advancement"/>
         <option id="color.recent"><![CDATA[#ff00ff #cc66ff #ff0000 #00ff00 #000000 #66ccff #99ff99 #ffff66 #ffff99 #ffcc66]]></option>
@@ -73,24 +73,43 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="21" name="Début du projet" color="#00ff00" meeting="true" start="2018-01-29" duration="0" complete="0" expand="true"/>
-        <task id="4" name="Documentation" color="#999999" meeting="false" start="2018-01-29" duration="44" complete="0" expand="true"/>
-        <task id="0" name="Analyse" color="#ff6666" meeting="false" start="2018-01-29" duration="10" complete="0" expand="true">
+        <task id="147" name="Présentation du module + choix des thèmes" color="#8cb6ce" meeting="false" start="2018-01-29" duration="2" complete="0" expand="true"/>
+        <task id="21" name="Début du projet" color="#00ff00" meeting="true" start="2018-02-01" duration="0" complete="0" expand="true"/>
+        <task id="4" name="Documentation" color="#999999" meeting="false" start="2018-02-01" duration="41" complete="0" expand="true"/>
+        <task id="0" name="Analyse" color="#ff6666" meeting="false" start="2018-02-01" duration="12" complete="0" expand="true">
             <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <task id="65" name="Planification initiale" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="0" expand="true"/>
+            <task id="42" name="Cahier des charges détaillé" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="0" expand="true"/>
+            <task id="49" name="Cas d'utilisation" color="#8cb6ce" meeting="false" start="2018-02-05" duration="5" complete="0" expand="true"/>
+            <task id="54" name="Sénarios" meeting="false" start="2018-02-05" duration="5" complete="0" expand="true"/>
+            <task id="53" name="WireFrames" meeting="false" start="2018-02-12" duration="5" complete="0" expand="true"/>
+            <task id="51" name="Planification détaillée" color="#8cb6ce" meeting="false" start="2018-02-12" duration="5" complete="0" expand="true"/>
         </task>
-        <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-02-12" duration="5" complete="0" expand="true">
+        <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-02-26" duration="10" complete="0" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <task id="97" name="Analyse de l'environnement" meeting="false" start="2018-02-26" duration="1" complete="0" expand="true"/>
+            <task id="107" name="Détermination de l'arborescence du site et des rubriques" color="#8cb6ce" meeting="false" start="2018-02-26" duration="1" complete="0" expand="true"/>
+            <task id="109" name="Definition de la charte graphique" color="#8cb6ce" meeting="false" start="2018-02-27" duration="1" complete="0" expand="true"/>
+            <task id="111" name="Maquette graphique" color="#8cb6ce" meeting="false" start="2018-03-01" duration="7" complete="0" expand="true"/>
+            <task id="113" name="Conception de la Base de données" meeting="false" start="2018-03-01" duration="7" complete="0" expand="true"/>
+            <task id="115" name="Conception du Code" meeting="false" start="2018-03-05" duration="4" complete="0" expand="true"/>
+            <task id="117" name="Plugins et librairies" meeting="false" start="2018-03-09" duration="1" complete="0" expand="true"/>
+            <task id="119" name="Choix de la formule d'hébergement" meeting="false" start="2018-03-09" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="2" name="Réalisation" color="#99ff99" meeting="false" start="2018-02-26" duration="15" complete="0" expand="true">
-            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        <task id="2" name="Réalisation" color="#99ff99" meeting="false" start="2018-03-12" duration="14" complete="0" expand="true">
+            <task id="161" name="Dossier de réalisation" meeting="false" start="2018-03-12" duration="14" complete="0" expand="true"/>
+            <task id="182" name="Dossier d'archivage" meeting="false" start="2018-03-12" duration="14" complete="0" expand="true"/>
+            <task id="183" name="Procédures de tests" color="#66ccff" meeting="false" start="2018-03-27" duration="3" complete="0" expand="true">
+                <task id="184" name="Description des tests effectués" meeting="false" start="2018-03-27" duration="3" complete="0" expand="true"/>
+                <task id="185" name="Erreurs restantes" meeting="false" start="2018-03-27" duration="3" complete="0" expand="true"/>
+            </task>
         </task>
-        <task id="3" name="Procédures de tests" color="#66ccff" meeting="false" start="2018-03-19" duration="5" complete="0" expand="true">
-            <depend id="40" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="40" name="Mise en service" color="#8cb6ce" meeting="false" start="2018-03-26" duration="4" complete="0" expand="true">
+        <task id="40" name="Mise en service" color="#8cb6ce" meeting="false" start="2018-04-16" duration="3" complete="0" expand="true">
             <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <task id="187" name="Rapport de mise en service" meeting="false" start="2018-04-16" duration="3" complete="0" expand="true"/>
+            <task id="189" name="Liste des documents fournis" meeting="false" start="2018-04-16" duration="3" complete="0" expand="true"/>
         </task>
-        <task id="5" name="Préparation présentation" color="#000000" meeting="false" start="2018-04-16" duration="5" complete="0" expand="true"/>
+        <task id="5" name="Préparation présentation" color="#000000" meeting="false" start="2018-04-19" duration="1" complete="0" expand="true"/>
         <task id="24" name="Fin du projet" color="#ff0000" meeting="true" start="2018-04-20" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>

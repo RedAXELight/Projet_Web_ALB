@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-22" view-index="0" gantt-divider-location="430" resource-divider-location="300" version="2.8.5" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-08" view-index="0" gantt-divider-location="430" resource-divider-location="300" version="2.8.5" locale="fr">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
+    <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Nom" width="240" order="0"/>
         <field id="tpd4" name="Date de début" width="84" order="1"/>
         <field id="tpd5" name="Date de fin" width="87" order="2"/>
@@ -76,14 +76,14 @@
         <task id="147" name="Présentation du module + choix des thèmes" color="#8cb6ce" meeting="false" start="2018-01-29" duration="2" complete="0" expand="true"/>
         <task id="21" name="Début du projet" color="#00ff00" meeting="true" start="2018-02-01" duration="0" complete="0" expand="true"/>
         <task id="4" name="Documentation" color="#999999" meeting="false" start="2018-02-01" duration="41" complete="0" expand="true"/>
-        <task id="0" name="Analyse" color="#ff6666" meeting="false" start="2018-02-01" duration="12" complete="79" expand="true">
+        <task id="0" name="Analyse" color="#ff6666" meeting="false" start="2018-02-01" duration="12" complete="0" expand="true">
             <depend id="1" type="2" difference="0" hardness="Strong"/>
-            <task id="65" name="Planification initiale" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="100" expand="true"/>
-            <task id="42" name="Cahier des charges détaillé" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="100" expand="true"/>
-            <task id="49" name="Cas d'utilisation" color="#8cb6ce" meeting="false" start="2018-02-05" duration="5" complete="100" expand="true"/>
+            <task id="65" name="Planification initiale" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="0" expand="true"/>
+            <task id="42" name="Cahier des charges détaillé" color="#8cb6ce" meeting="false" start="2018-02-01" duration="2" complete="0" expand="true"/>
+            <task id="49" name="Cas d'utilisation" color="#8cb6ce" meeting="false" start="2018-02-05" duration="5" complete="0" expand="true"/>
             <task id="54" name="Sénarios" meeting="false" start="2018-02-05" duration="5" complete="0" expand="true"/>
-            <task id="53" name="WireFrames" meeting="false" start="2018-02-12" duration="5" complete="100" expand="true"/>
-            <task id="51" name="Planification détaillée" color="#8cb6ce" meeting="false" start="2018-02-12" duration="5" complete="100" expand="true"/>
+            <task id="53" name="WireFrames" meeting="false" start="2018-02-12" duration="5" complete="0" expand="true"/>
+            <task id="51" name="Planification détaillée" color="#8cb6ce" meeting="false" start="2018-02-12" duration="5" complete="0" expand="true"/>
         </task>
         <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-02-26" duration="10" complete="0" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>

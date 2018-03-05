@@ -1,0 +1,70 @@
+{
+    Apartments: [
+        {
+            "idApartment": 1,
+            "aptAddress": "",
+            "aptNPA": "",
+            "aptCity": "",
+            "aptPhone": "",
+            "aptRooms": "",
+            "aptSuperficy": "",
+            "aptPrice": "",
+            "aptDescription": "",
+            "aptBeginDate": "",
+            "aptEndDate": ""
+        },
+        {
+            "idApartment": 2,
+            "aptAddress": "",
+            "aptNPA": "",
+            "aptCity": "",
+            "aptPhone": "",
+            "aptRooms": "",
+            "aptSuperficy": "",
+            "aptPrice": "",
+            "aptDescription": "",
+            "aptBeginDate": "",
+            "aptEndDate": ""
+        },
+        {
+            "idApartment": 3,
+            "aptAddress": "",
+            "aptNPA": "",
+            "aptCity": "",
+            "aptPhone": "",
+            "aptRooms": "",
+            "aptSuperficy": "",
+            "aptPrice": "",
+            "aptDescription": "",
+            "aptBeginDate": "",
+            "aptEndDate": ""
+        },
+        {
+            "idApartment": 4,
+            "aptAddress": "",
+            "aptNPA": "",
+            "aptCity": "",
+            "aptPhone": "",
+            "aptRooms": "",
+            "aptSuperficy": "",
+            "aptPrice": "",
+            "aptDescription": "",
+            "aptBeginDate": "",
+            "aptEndDate": ""
+        },
+        {
+            "idApartment": 5,
+            "aptAddress": "",
+            "aptNPA": "",
+            "aptCity": "",
+            "aptPhone": "",
+            "aptRooms": "",
+            "aptSuperficy": "",
+            "aptPrice": "",
+            "aptDescription": "",
+            "aptBeginDate": "",
+            "aptEndDate": ""
+        }
+    ]
+    
+}

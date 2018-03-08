@@ -1,1 +1,3 @@
-# My project's README
+# fichiers du site
+
+##Structure MVC

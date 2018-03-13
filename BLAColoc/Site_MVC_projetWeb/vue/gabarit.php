@@ -71,17 +71,21 @@
               <ul class="nav nav-pills ddmenu">
 
                 <?php if((@$_GET['action']=="vue_accueil")||(!isset($_GET['action']))) :?>
-                <li class="active"><a href="index.php">Home</a></li>
+                <li class="active"><a href="index.php">Accueil</a></li>
                 <?php else : ?>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php">Accueil</a></li>
                 <?php endif; ?>
-                <?php if(@$_GET['action']=="vue_snows") :?>
-                <li class="active"><a href="index.php?action=vue_snows">Nos snows</a></li>
+                <?php if(@$_GET['action']=="vue_appartement") :?>
+                <li class="active"><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php else : ?>
-                <li><a href="index.php?action=vue_snows">Nos snows</a></li>
+                <li><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php endif; ?>
                 </li>
-                <li><a href="contact.php">Contact</a></li>
+                <?php if(@$_GET['action']=="vue_contact") :?>
+                    <li class="active"><a href="index.php?action=vue_contact">Contact</a></li>
+                <?php else : ?>
+                    <li><a href="index.php?action=vue_contact">Contact</a></li>
+                <?php endif; ?>
               </ul>
             </div>
           </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-01-22" view-index="0" gantt-divider-location="430" resource-divider-location="300" version="2.8.5" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="BLAColoc" company="" webLink="http://" view-date="2018-02-12" view-index="0" gantt-divider-location="430" resource-divider-location="300" version="2.8.5" locale="fr">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
         <field id="tpd3" name="Nom" width="240" order="0"/>
@@ -85,14 +85,13 @@
             <task id="53" name="WireFrames" meeting="false" start="2018-02-12" duration="5" complete="100" expand="true"/>
             <task id="51" name="Planification détaillée" color="#8cb6ce" meeting="false" start="2018-02-12" duration="5" complete="100" expand="true"/>
         </task>
-        <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-02-26" duration="10" complete="34" expand="true">
+        <task id="1" name="Conception" color="#ffff66" meeting="false" start="2018-02-26" duration="10" complete="75" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
             <task id="97" name="Analyse de l'environnement" meeting="false" start="2018-02-26" duration="1" complete="0" expand="true"/>
             <task id="107" name="Détermination de l'arborescence du site et des rubriques" color="#8cb6ce" meeting="false" start="2018-02-26" duration="1" complete="0" expand="true"/>
             <task id="109" name="Definition de la charte graphique" color="#8cb6ce" meeting="false" start="2018-02-27" duration="1" complete="0" expand="true"/>
-            <task id="111" name="Maquette graphique" color="#8cb6ce" meeting="false" start="2018-03-01" duration="7" complete="0" expand="true"/>
             <task id="113" name="Conception de la Base de données" meeting="false" start="2018-03-01" duration="7" complete="100" expand="true"/>
-            <task id="115" name="Conception du Code" meeting="false" start="2018-03-05" duration="4" complete="0" expand="true"/>
+            <task id="115" name="Conception du Code" meeting="false" start="2018-03-05" duration="4" complete="100" expand="true"/>
             <task id="117" name="Plugins et librairies" meeting="false" start="2018-03-09" duration="1" complete="0" expand="true"/>
             <task id="119" name="Choix de la formule d'hébergement" meeting="false" start="2018-03-09" duration="1" complete="100" expand="true"/>
         </task>

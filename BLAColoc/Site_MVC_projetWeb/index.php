@@ -24,6 +24,10 @@ try
       case 'vue_snows' :
           snows();
         break;
+      case 'vue_contact' :
+          snows();
+        break;
+
       default :
         throw new Exception("Action non valide");
     }

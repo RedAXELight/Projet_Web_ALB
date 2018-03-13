@@ -17,6 +17,13 @@ function accueil()
   require "vue/vue_accueil.php";
 }
 
+function contact()
+{
+    require "vue/vue_contact.php";
+}
+
+//Affichage de la page contact
+
 function erreur($e)
 {
   $_SESSION['erreur']=$e;
@@ -28,5 +35,5 @@ function erreur($e)
 function snows()
 {
   $resultats=getSnows(); // pour récupérer les données des snows dans la BD
-  require 'vue/vue_snows.php';
+  require 'vue/vue_appartement.php';
 }

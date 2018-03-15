@@ -75,11 +75,19 @@
                 <?php else : ?>
                 <li><a href="index.php">Accueil</a></li>
                 <?php endif; ?>
+
                 <?php if(@$_GET['action']=="vue_appartement") :?>
                 <li class="active"><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php else : ?>
                 <li><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php endif; ?>
+
+                <?php if(@$_GET['action']=="vue_login") :?>
+                    <li class="active"><a href="index.php?action=vue_login">Login</a></li>
+                <?php else : ?>
+                    <li><a href="index.php?action=vue_login">Login</a></li>
+                <?php endif; ?>
+
                 </li>
                 <?php if(@$_GET['action']=="vue_contact") :?>
                     <li class="active"><a href="index.php?action=vue_contact">Contact</a></li>
@@ -167,9 +175,8 @@
           </div>
 
         <div class="span3" id="footerArea3">
-          <h3>Horaires de location</h3>
-          <p>Les locations peuvent s'effectuer tous les jours de la semaine en haute saison de 07h à 19h et en basse saison, les jours ouvrables de 8h à 18h.<br>
-          Vous pouvez aussi passer par le site. Pour le retrait et le dépot, vous devrez passer au guichet automatique à l'arrière du magasin</p>
+          <h3>Locations</h3>
+          <p>Les locations sont soumises à contrat. Toutes dégradations, vols, et autres seront à la charge du client si responsable de ses derniers.</p>
         </div>
 
         <div class="span3" id="footerArea4">

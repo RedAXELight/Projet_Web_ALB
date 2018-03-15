@@ -25,7 +25,7 @@ try
           snows();
         break;
       case 'vue_contact' :
-          snows();
+          contact();
         break;
 
       default :

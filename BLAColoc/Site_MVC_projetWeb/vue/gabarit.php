@@ -58,8 +58,8 @@
     <div class="row-fluid">
       <div class="span12">
         <div id="divLogo" class="pull-left">
-          <a href="index.html" id="divSiteTitle">Rent A Snow</a><br />
-          <a href="index.html" id="divTagLine">La glisse à moindre coût</a>
+          <a href="index.php?action=vue_accueil" id="divSiteTitle"><img src="../contenu/images/Logo.png"></a><br/>
+          <a href="index.php?action=vue_accueil" id="divTagLine">Un appart' n'importe où</a>
         </div>
 
         <div id="divMenuRight" class="pull-right">
@@ -141,8 +141,8 @@
       <div class="divPanel">
         <div class="row-fluid">
           <div class="span3" id="footerArea1">
-            <h3>Notre magasin</h3>
-            <p>Nous sommes une équipe de jeunes snowboardeurs qui souhaitons faire découvrir cette discipline à tous les publics.</p>
+            <h3>Notre Site</h3>
+            <p>Ce site est destiné aux étudiants envieux d'un appartement de bonne qualité pour un bon prix</p>
             <p>
                 <a href="#" title="Terms of Use">Terms of Use</a><br />
                 <a href="#" title="Privacy Policy">Privacy Policy</a><br />
@@ -154,15 +154,11 @@
           <div class="span3" id="footerArea2">
             <h3>Dernière nouveautés</h3>
             <p>
-                <a href="#" title="">Le Burton B221 est à disposition</a><br />
+                <a href="#" title="">Nouvel appartement à Payrene</a><br />
                 <span style="text-transform:none;">15/05/2016</span>
             </p>
             <p>
-                <a href="#" title="">Les horaires ont été étendus</a><br />
-                <span style="text-transform:none;">02/01/2016</span>
-            </p>
-            <p>
-                <a href="#" title="">Paul champion suisse !</a><br />
+                <a href="#" title="">élu site immobilier de l'année !</a><br />
                 <span style="text-transform:none;">19/11/2015</span>
             </p>
             <p>
@@ -190,7 +186,7 @@
               <i class="general foundicon-mail icon"></i>
               <span class="field">Email :</span>
               <br />
-              <a href="mailto:info@rentasnow.com" title="Email">info@rentasnow.com</a>
+              <a href="mailto:info@rentasnow.com" title="Email">info@blacoloc.com</a>
           </li>
           <li>
               <i class="general foundicon-home icon" style="margin-bottom:50px"></i>

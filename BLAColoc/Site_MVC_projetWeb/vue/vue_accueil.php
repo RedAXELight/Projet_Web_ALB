@@ -21,7 +21,7 @@ $titre = "BLAColoc - Accueil";
             <li>des sobres au plus luxueux,
             <li>toujours à un prix abordable
         </ul>
-        La durée de la location est définie avec le bailleur sur le contrat.
+
         </p>
 
 
@@ -59,8 +59,8 @@ $titre = "BLAColoc - Accueil";
                     <h4 class="title">Contrat</h4>
                     <hr/>
                     <p>
-                        Un contrat sera signé à chaque location. D'autre part nos appartements sont sous surveillance
-                        vidéo a l'exterieur afin de garantir votre sécurité.
+                        Un contrat sera signé à chaque location. La durée de la location est définie avec le bailleur sur ledit contrat. D'autre part, nos appartements sont sous surveillance
+                        vidéo a l'exterieur, afin de garantir votre sécurité.
                     </p>
                 </div>
             </div>

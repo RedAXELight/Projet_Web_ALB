@@ -10,70 +10,76 @@
 
 // tampon de flux stocké en mémoire
 ob_start();
-$titre="RentASnow - Accueil";
+$titre = "BLAColoc - Accueil";
 ?>
 
-<div class="span12" id="divMain">
-  <h1>Nos activités</h1>
+    <div class="span12" id="divMain">
+        <h1>Nos activités</h1>
 
-	<p><strong>Rent A Snow</strong> est spécialisée dans la location de snows. Nous avons tout types de modèles :
-  <ul>
-    <li>des plus récents au plus anciens,
-    <li>pour débutants ou confirmés,
-    <li>pour de la piste ou du hors-piste
-  </ul>
-  La location peut se faire au jour, à la semaine, au mois ou à la saison.
-  </p>
-            <p>
-  Nous proposons aussi des cours privés ou en petits groupe (4 personnes maximum) pour tous les niveaux avec des moniteurs certifiés par l'école suisse de snowboard au prix de 60.- /heure.
-            </p>
+        <p><strong>BLAColoc</strong> est spécialisée dans la location d'appartement spécialement pour les étudiants :
+        <ul>
+            <li>des sobres au plus luxueux,
+            <li>toujours à un prix abordable
+        </ul>
+        La durée de la location est définie avec le bailleur sur le contrat.
+        </p>
 
-                    <br />
-                    <br />
 
-	<div class="row-fluid">
-    <div class="span3">
-			<div class="box">
-				<i class="icon-wrench"></i>
-				<h4 class="title">Entretien</h4> <hr/>
-				<p>
-					Le matériel est toujours contrôlé avant d'être mis à disposition des clients. A chaque fois que vous louerez un snow, vous pouvez partir surfer tranquille.
-				</p>
-			</div>
-	</div>
+        <br/>
+        <br/>
 
-	<div class="span3">
-			<div class="box">
-				<i class="icon-leaf"></i>
-				<h4 class="title">Environnement</h4> <hr/>
-				<p>
-Nous veillons à respecter l'environnement en utilisant au maximum du matériel recyclable et en prenant de consommer un minimum d'énergie lors de nos activités au magasin,
-				</p>
-			</div>
-	</div>
-
-	<div class="span3">
-			<div class="box">
-				<i class="icon-edit"></i>
-				<h4 class="title">Contrat</h4> <hr/>
-				<p>
-Un contrat sera signé à chaque location. D'autre part nous travaillons en étroite collaboration avec la Rega et garantissons des conditions de sauvetage optimales.
-				</p>
-			</div>
-	</div>
-
-	<div class="span3">
-			<div class="box">
-				<i class="icon-signal"></i>
-				<h4 class="title">Signal</h4> <hr/>
-				<p>
-					Pour ceux qui aiments les sensations forte, nous louons du matériel de protection d'avalanches.
-				</p>
-			</div>
-	</div>    </div>
-
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="box">
+                    <i class="icon-wrench"></i>
+                    <h4 class="title">Entretien</h4>
+                    <hr/>
+                    <p>
+                        L'appartement est toujours entretenu et nettoyé avant la location, cependant, si un entretien
+                        des locataire n'est pas observé, une facture pour le temps supplémentaire sera envoyée.
+                    </p>
                 </div>
+            </div>
+
+            <div class="span3">
+                <div class="box">
+                    <i class="icon-leaf"></i>
+                    <h4 class="title">Environnement</h4>
+                    <hr/>
+                    <p>
+                        Nous veillons à respecter l'environnement en utilisant au maximum du courant d'origine
+                        renouvelable et pour utiliser des lumières dynamique afin d'economiser de l'énergie.
+                    </p>
+                </div>
+            </div>
+
+            <div class="span3">
+                <div class="box">
+                    <i class="icon-edit"></i>
+                    <h4 class="title">Contrat</h4>
+                    <hr/>
+                    <p>
+                        Un contrat sera signé à chaque location. D'autre part nos appartements sont sous surveillance
+                        vidéo a l'exterieur afin de garantir votre sécurité.
+                    </p>
+                </div>
+            </div>
+
+            <div class="span3">
+                <div class="box">
+                    <i class="icon-signal"></i>
+                    <h4 class="title">Signal</h4>
+                    <hr/>
+                    <p>
+                        Tous nos appartements sont reliés par fibre optique, il est donc garanti d'avoir une connexion
+                        d'1Go/seconde !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 <?php
-  $contenu = ob_get_clean();
-  require "gabarit.php";
+$contenu = ob_get_clean();
+require "gabarit.php";

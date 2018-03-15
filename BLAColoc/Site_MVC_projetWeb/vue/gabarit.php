@@ -162,7 +162,7 @@
           <div class="span3" id="footerArea2">
             <h3>Dernière nouveautés</h3>
             <p>
-                <a href="#" title="">Nouvel appartement à Payrene</a><br />
+                <a href="#" title="">Nouvel appartement à Payerne</a><br />
                 <span style="text-transform:none;">15/05/2016</span>
             </p>
             <p>

@@ -110,9 +110,9 @@
 
         <div class="camera_full_width">
           <div id="camera_wrap">
-            <div data-src="contenu/slider-images/4_1.jpg" ><div class="camera_caption fadeFromBottom cap1">Les derniers appartements toujours à disposition.</div></div>
-            <div data-src="contenu/slider-images/1_1.jpg" ><div class="camera_caption fadeFromBottom cap2">Des appartements de qualité, abordable pour les étudiants !</div></div>
-            <div data-src="contenu/slider-images/2_1.jpg" ><div class="camera_caption fadeFromBottom cap3">Une connexion internet au top toujours garantie !</div></div>
+            <div data-src="contenu/slider-images/1.jpg" ><div class="camera_caption fadeFromBottom cap1">Les derniers appartements toujours à disposition.</div></div>
+            <div data-src="contenu/slider-images/2.jpg" ><div class="camera_caption fadeFromBottom cap2">Des appartements de qualité, abordable pour les étudiants !</div></div>
+            <div data-src="contenu/slider-images/3.jpg" ><div class="camera_caption fadeFromBottom cap3">Une connexion internet au top toujours garantie !</div></div>
           </div>
           <br style="clear:both"/><div style="margin-bottom:40px"></div>
         </div>

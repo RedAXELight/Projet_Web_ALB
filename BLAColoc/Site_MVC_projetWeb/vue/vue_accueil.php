@@ -36,7 +36,7 @@ $titre = "BLAColoc - Accueil";
                     <hr/>
                     <p>
                         L'appartement est toujours entretenu et nettoyé avant la location, cependant, si un entretien
-                        des locataire n'est pas observé, une facture pour le temps supplémentaire sera envoyée.
+                        du/des locataire(s) n'est pas observé, une facture pour le temps supplémentaire sera envoyée.
                     </p>
                 </div>
             </div>

@@ -18,9 +18,6 @@ try {
             case 'vue_accueil' :
                 accueil();
                 break;
-            case 'vue_snows' :
-                snows();
-                break;
             case 'vue_login' :
                 login();
                 break;

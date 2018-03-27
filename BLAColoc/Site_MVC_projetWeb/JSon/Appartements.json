@@ -11,6 +11,7 @@
             "aptPrice": "",
             "aptDescription": "",
             "aptBeginDate": "",
+            "aptActive": 1,
             "aptEndDate": ""
         },
         {
@@ -24,6 +25,7 @@
             "aptPrice": "",
             "aptDescription": "",
             "aptBeginDate": "",
+            "aptActive": 1,
             "aptEndDate": ""
         },
         {
@@ -37,6 +39,7 @@
             "aptPrice": "",
             "aptDescription": "",
             "aptBeginDate": "",
+            "aptActive": 1,
             "aptEndDate": ""
         },
         {
@@ -50,6 +53,7 @@
             "aptPrice": "",
             "aptDescription": "",
             "aptBeginDate": "",
+            "aptActive": 1,
             "aptEndDate": ""
         },
         {
@@ -63,6 +67,7 @@
             "aptPrice": "",
             "aptDescription": "",
             "aptBeginDate": "",
+            "aptActive": 1,
             "aptEndDate": ""
         }
     ]

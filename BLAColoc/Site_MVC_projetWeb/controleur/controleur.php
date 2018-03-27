@@ -45,10 +45,14 @@ function login(){
     }
 }
 
-// ----------------- Fonctions en lien avec les snows ---------------------
+// ----------------- Fonctions en lien avec les appartements ---------------------
 
-function snows()
+function appartement()
 {
-  $resultats=getSnows(); // pour récupérer les données des snows dans la BD
   require 'vue/vue_appartement.php';
+}
+
+function details()
+{
+    require 'vue/vue_appartement_details.php';
 }

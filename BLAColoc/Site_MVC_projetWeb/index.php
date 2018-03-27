@@ -24,6 +24,12 @@ try {
             case 'vue_contact' :
                 contact();
                 break;
+            case 'vue_appartement' :
+                appartement();
+                break;
+            case 'vue_appartement_details' :
+                details();
+                break;
 
             default :
                 throw new Exception("Action non valide");

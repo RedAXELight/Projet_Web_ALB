@@ -9,40 +9,40 @@
  */
 
 ob_start();
-$titre = 'Rent A Snow - Nos snows';
+$titre = 'BLAColoc - Nos appartements';
 
 ?>
 
-<article>
-  <header>
-    <h2>Nos snows</h2>
-    <table class="table textcolor">
-      <tr>
-      <?php
-        // Affichage des entêtes du tableau (-1 pour enlever le champ statut)
+    <article>
+        <h1>Les appartements disponibles :</h1>
 
-        for ($i=0; $i<$resultats->columnCount()-1; $i++)
-        {
-          $entete = $resultats->getColumnMeta($i);
-          echo "<th>" . $entete['name'] . "</th>";
-        }
-      ?>
-      </tr>
-      <?php foreach ($resultats as $resultat) :?>
-        <!-- Affichage des résultats de la BD -->
-        <tr>
-          <td><?=$resultat['idsurf'];?></td>
-          <td><?=$resultat['marque'];?></td>
-          <td><?=$resultat['boots'];?></td>
-          <td><?=$resultat['type'];?></td>
-          <td><?=$resultat['disponibilite'];?></td>
-        </tr>
-      <?php endforeach;?>
-    </table>
-  </header>
-</article>
-<hr/>
+        <div class="row-fluid">
+            <div class="span12">
+                <hr/>
+            </div>
+
+            <div class="span12">
+                <div class="span4">
+                    Mots d'image<!--Image de l'appartement-->
+                </div>
+.
+                <div class="span7">
+                    Mots<!--Description de l'appart-->
+                    <br>
+                    <br>
+                    <a href="index.php?action=vue_appartement_details">détails...</a>
+                </div>
+
+            </div>
+
+            <div class="span12">
+                <hr/>
+            </div>
+        </div>
+
+    </article>
+
 
 <?php
-  $contenu=ob_get_clean();
-  require "gabarit.php";
+$contenu = ob_get_clean();
+require "gabarit.php";

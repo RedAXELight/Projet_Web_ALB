@@ -8,46 +8,51 @@
 
 // tampon de flux stocké en mémoire
 ob_start();
-if (isset($_SESSION)) {
-    $_SESSION = array();
-    session_destroy();
-}
+
 
 $titre="BLAColoc - Login";
 ?>
-<div class="container">
+<div>
     <h2>Login / Logout</h2>
-
     <article>
         <?php
-        if (isset($resultats))
+        //Si la session est active = déconnecter
+        if (isset($_SESSION['active']))
         {
-            // les données dans le formulaire sont exactes
-            $ligne=$resultats->fetch();
-            // Test pour savoir si on est vendeur ou client
-            if (isset($ligne['idClient']))
+            $_SESSION = array();
+            session_destroy();
+            header ("location:index.php");
+        }
+
+        //Si le login est correct = passe la session active
+            if (isset($_SESSION['idClient']))
             {
-                echo "Bonjour ".$ligne['prenomClient']." ".$ligne['nomClient'].". Vous êtes bien connecté !";
-                // Création de la session
-                $_SESSION['login']=$ligne['prenomClient']." ".$ligne['nomClient'];
-                $_SESSION['typeUser']="Client";
+                echo "Bonjour ".$_SESSION['cltSurname']." ".$_SESSION['cltName'].". Vous êtes bien connecté !";
+                $_SESSION['active'] = 1;
             }
             else
             {
-				echo "Erreur de login";
-            }
-        }
-        else
-        {
-            if (isset($_SESSION['login']))
-            {
-                session_destroy();
-                header ("location:index.php");
-            }
+              if(isset($resultat)){
+                if ($resultat == 4){
+                  echo "Fichier introuvable !";
+                }
+                elseif ($resultat == 3){
+                  echo "Impossible de lire le fichier !";
+                }
+                elseif ($resultat == 2) {
+                  echo "Ce login n'existe pas.";
+                }
+                elseif ($resultat == 1) {
+                  echo "Le mot de passe est incorrect.";
+                }
+                else {
+                  echo "Une erreur inconnu s'est produit.";
+                }
+              }
             ?>
 
             <form class='form' method='POST' action="index.php?action=vue_login">
-                <table class="table table-hover ">
+                <table class="table table-hover">
                     <tr>
                         <td scope="row">Login</td>
                         <td>
@@ -58,19 +63,19 @@ $titre="BLAColoc - Login";
                     <tr>
                         <td scope="row">Mot de passe</td>
                         <td>
-                            <input type="password" placeholder="Entrez votre mot de passe" name="fPass" value="<?=@$_POST['fPass'] ?>"/>
+                            <input type="password" placeholder="Entrez votre mot de passe" name="fPass" value=""/>
                         </td>
                     </tr>
                     <tr>
-						<td><input class="btn" type="reset" value="Effacer"></td>
-                        <td><input class="btn" type="submit" value="Login"></td>
+                        <td><input class="btn" type="submit" value="Login"><input class="btn" type="reset" value="Effacer"></td>
+                        <td></td>
                     </tr>
                 </table>
             </form>
 
         <?php } ?>
     </article>
-    <hr/>
+
 </div>
 <?php
 $contenu = ob_get_clean();

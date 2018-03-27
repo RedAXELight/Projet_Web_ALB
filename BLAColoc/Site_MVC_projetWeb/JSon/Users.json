@@ -1,11 +1,11 @@
-{
-    Users: [
+[
         {
             "idClients": 1,
+            "cltLogin": "JasonAbbott",
             "cltName": "Jason",
             "cltSurname": "Abbott",
-            "email": "penny@humphrey.cc",
-            "password": "",
+            "email": "JasonAbbott@gmail.com",
+            "password": "test",
             "cltAddress": "",
             "cltNPA": "",
             "cltCity": "",
@@ -13,10 +13,11 @@
         },
         {
             "idClients": 2,
+            "cltLogin": "NancyOlson",
             "cltName": "Nancy",
             "cltSurname": "Olson",
-            "email": "luis@wall.ng",
-            "password": "",
+            "email": "NancyOlson@hotmail.com",
+            "password": "test",
             "cltAddress": "",
             "cltNPA": "",
             "cltCity": "",
@@ -24,10 +25,11 @@
         },
         {
             "idClients": 3,
+            "cltLogin": "NicholasMcLean",
             "cltName": "Nicholas",
             "cltSurname": "McLean",
-            "email": "stanley@harrell.ie",
-            "password": "",            
+            "email": "NicholasMcLean@gmail.com",
+            "password": "",
             "cltAddress": "",
             "cltNPA": "",
             "cltCity": "",
@@ -35,9 +37,10 @@
         },
         {
             "idClients": 4,
+            "cltLogin": "GlendaWeeks",
             "cltName": "Glenda",
             "cltSurname": "Weeks",
-            "email": "louis@lucas.ma",
+            "email": "GlendaWeeks@hotmail.com",
             "password": "",
             "cltAddress": "",
             "cltNPA": "",
@@ -46,15 +49,14 @@
         },
         {
             "idClients": 5,
+            "cltLogin": "JoannaHuffman",
             "cltName": "Joanna",
             "cltSurname": "Huffman",
-            "email": "warren@dawson.vc",
+            "email": "JoannaHuffman@gmail.com",
             "password": "",
             "cltAddress": "",
             "cltNPA": "",
             "cltCity": "",
             "cltPhone": ""
         }
-    ]
-    
-}
+]

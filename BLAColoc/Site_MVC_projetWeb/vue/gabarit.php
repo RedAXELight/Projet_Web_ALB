@@ -82,12 +82,19 @@
                 <li><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php endif; ?>
 
+                <?php if (isset($_SESSION['active'])){ ?>
+                  <?php if(@$_GET['action']=="vue_login") :?>
+                      <li class="active"><a href="index.php?action=vue_login">Logout</a></li>
+                  <?php else : ?>
+                      <li><a href="index.php?action=vue_login">Logout</a></li>
+                  <?php endif; ?>
+              <?php }else{ ?>
                 <?php if(@$_GET['action']=="vue_login") :?>
                     <li class="active"><a href="index.php?action=vue_login">Login</a></li>
                 <?php else : ?>
                     <li><a href="index.php?action=vue_login">Login</a></li>
                 <?php endif; ?>
-
+              <?php } ?>
                 </li>
                 <?php if(@$_GET['action']=="vue_contact") :?>
                     <li class="active"><a href="index.php?action=vue_contact">Contact</a></li>

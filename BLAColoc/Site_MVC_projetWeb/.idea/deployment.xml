@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Localhost Snow">
+  <component name="PublishConfigData" serverName="BlaColoc">
     <serverData>
+      <paths name="BlaColoc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Localhost Snow">
         <serverdata>
           <mappings>

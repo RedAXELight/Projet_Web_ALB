@@ -33,7 +33,13 @@ function erreur($e)
 
 function login(){
     if (isset ($_POST['fLogin']) && isset ($_POST['fPass'])) {
-        $resultats = getLogin($_POST);
+        $resultat = getLogin($_POST);
+        if($resultat == 0){
+          $idClient = $_SESSION['idClient'];
+          $cltName = $_SESSION['cltName'];
+          $cltSurname = $_SESSION['cltSurname'];
+          $email = $_SESSION['email'];
+        }
         require "vue/vue_login.php";
     } else {
         // détruit la session de la personne connectée après appuyé sur Logout

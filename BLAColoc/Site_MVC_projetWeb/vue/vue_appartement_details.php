@@ -11,15 +11,27 @@ $titre = 'BLAColoc - ';//ajouter dynamiquement le nom de l'appart
 
 ?>
 
-<article>
-    <hr>
-    <div class="span12">
-        <div
-    </div>
-</article>
 
+    <article>
+        <h1>Nom de l'appartement</h1>
 
+        <div class="row-fluid">
+            <div class="span12">
+                <hr/>
+            </div>
 
+            <div class="span12">
+                <div class="span4">
+                    Mots d'image<!--Image de l'appartement-->
+                </div>
+            </div>
+
+            <div class="span12">
+                <hr/>
+            </div>
+        </div>
+
+    </article>
 
 <?php
 $contenu = ob_get_clean();

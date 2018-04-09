@@ -15,6 +15,7 @@ $titre="RentASnow - Contacts";
                 <div class="title">
                     <h1>Un problème, une requête contactez-nous!</h1>
                 </div>
+                <hr>
             </header>
             <form method="post" action="index.php?action=vue_contact&msg=<font style:'text-decoration:underline, color=red'>Le message a bien été envoyé!</h3></font>" enctype="multipart/form-data">
                 <table>
@@ -28,7 +29,7 @@ $titre="RentASnow - Contacts";
                     </tr>
                     <tr>
                         <td>Votre message: </td>
-                        <td><textarea name="message" id="contactMessage"></textarea> </td>
+                        <td><textarea rows="10" cols="50" name="message" id="contactMessage"></textarea> </td>
                     </tr>
                 </table>
                 <input type="reset">

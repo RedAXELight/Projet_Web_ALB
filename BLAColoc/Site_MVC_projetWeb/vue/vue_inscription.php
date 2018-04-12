@@ -99,7 +99,7 @@ $titre="BLAColoc - Inscription";
 				<td></td>
             </tr>
             <tr>
-                <td><input class="btn" type="reset" value="Reset"/></td>
+                <td><input class="btn" type="reset" value="Effacer"/></td>
                 <td><input class="btn" type="submit" value="Confirmer"/></td>
                 <td></td>
                 <td></td>

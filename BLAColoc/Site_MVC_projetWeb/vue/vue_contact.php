@@ -13,27 +13,28 @@ $titre="RentASnow - Contacts";
         <article class="post">
             <header>
                 <div class="title">
-                    <h1>Un problème, une requête contactez-nous!</h1>
+                    <h1>Un problème ? une requête ? Alors Contactez-nous!</h1>
                 </div>
-                <hr>
             </header>
-            <form method="post" action="index.php?action=vue_contact&msg=<font style:'text-decoration:underline, color=red'>Le message a bien été envoyé!</h3></font>" enctype="multipart/form-data">
-                <table>
+            <form class="form" method="post" action="index.php?action=vue_contact&msg=<font style:'text-decoration:underline, color=red'>Le message a bien été envoyé!</h3></font>" enctype="multipart/form-data">
+                <table class="table table-hover ">
                     <tr>
-                            <td>Votre e-mail:</td>
-                            <td><input type="text" id="contactNom" name="mail"> </td>
+                        <td style="width: 15%">Votre e-mail : </td>
+                        <td style="width: 30%"><input type="text" id="contactNom" name="mail"> </td>
                     </tr>
                     <tr>
-                        <td>Sujet: </td>
-                        <td><input type="text" id="contactSujet" name="sujet"></td>
+                        <td style="width: 15%">Sujet : </td>
+                        <td style="width: 30%"><input type="text" id="contactSujet" name="sujet"></td>
                     </tr>
                     <tr>
-                        <td>Votre message: </td>
-                        <td><textarea rows="10" cols="50" name="message" id="contactMessage"></textarea> </td>
+                        <td style="width: 15%">Votre message : </td>
+                        <td style="width: 85%"><textarea class="form-control" style="min-width: 80%; resize: none;" rows="10" cols="50" maxlength="1000" name="message" id="contactMessage"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 15%"><input class="btn" value="Effacer" type="reset"></td>
+                        <td style="width: 30%"><input class="btn" value="Envoyer" type="submit" id="contactSubmit"></td>
                     </tr>
                 </table>
-                <input type="reset">
-                <input type="submit" id="contactSubmit">
             </form>
         </article>
     </div>

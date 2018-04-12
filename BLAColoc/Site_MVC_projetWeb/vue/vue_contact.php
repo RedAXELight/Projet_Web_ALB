@@ -28,7 +28,7 @@ $titre="RentASnow - Contacts";
                     </tr>
                     <tr>
                         <td style="width: 15%">Votre message : </td>
-                        <td style="width: 85%"><textarea class="form-control" style="min-width: 80%; resize: vertical;" rows="10" cols="50" maxlength="1000" name="message" id="contactMessage"></textarea></td>
+                        <td style="width: 80%"><textarea class="form-control" style="min-width: 80%; resize: vertical;" rows="10" maxlength="1000" name="message" id="contactMessage"></textarea></td>
                     </tr>
                     <tr>
                         <td style="width: 15%"><input class="btn" value="Effacer" type="reset"></td>

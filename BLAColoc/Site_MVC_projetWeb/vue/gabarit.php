@@ -47,6 +47,7 @@
   <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 
   <link href="contenu/styles/custom.css" rel="stylesheet" type="text/css" />
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body id="pageBody">
 
@@ -58,7 +59,7 @@
     <div class="row-fluid">
       <div class="span12">
         <div id="divLogo" class="pull-left">
-          <a href="index.php?action=vue_accueil" id="divSiteTitle"><img src="../contenu/images/Logo.png"></a><br/>
+          <a href="index.php?action=vue_accueil" id="divSiteTitle"><img src="../contenu/images/logo.png"></a><br/>
           <a href="index.php?action=vue_accueil" id="divTagLine">Un appart' n'importe où</a>
         </div>
 
@@ -89,13 +90,21 @@
                       <li><a href="index.php?action=vue_login">Logout</a></li>
                   <?php endif; ?>
               <?php }else{ ?>
-                <?php if(@$_GET['action']=="vue_login") :?>
+                <?php if(@$_GET['action']=="vue_login" || @$_GET['action']=="enregistrer") :?>
                     <li class="active"><a href="index.php?action=vue_login">Login</a></li>
                 <?php else : ?>
                     <li><a href="index.php?action=vue_login">Login</a></li>
                 <?php endif; ?>
               <?php } ?>
-                </li>
+
+              <?php if (!isset($_SESSION['active'])) { ?>
+                <?php if (@$_GET['action']=="vue_inscription") { ?>
+                  <li class="active"><a href="index.php?action=vue_inscription">S'inscrire</a></li>
+                <?php }else{ ?>
+                  <li><a href="index.php?action=vue_inscription">S'inscrire</a></li>
+                <?php } ?>
+              <?php } ?>
+
                 <?php if(@$_GET['action']=="vue_contact") :?>
                     <li class="active"><a href="index.php?action=vue_contact">Contact</a></li>
                 <?php else : ?>

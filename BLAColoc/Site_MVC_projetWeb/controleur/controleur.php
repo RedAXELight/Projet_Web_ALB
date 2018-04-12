@@ -51,6 +51,23 @@ function login(){
     }
 }
 
+function inscription()
+{
+    require 'vue/vue_inscription.php';
+}
+
+function enregistrer()
+{
+    create_membre();
+    if (@$_POST['erreur'] > 0){
+      require 'vue/vue_inscription.php';
+    }else{
+      $resultat = 0;
+      require "vue/vue_login.php";
+    }
+}
+
+
 // ----------------- Fonctions en lien avec les appartements ---------------------
 
 function appartement()

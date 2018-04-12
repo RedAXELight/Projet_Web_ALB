@@ -13,7 +13,7 @@ ob_start();
 $titre="BLAColoc - Login";
 ?>
 <div>
-    <h2>Login / Logout</h2>
+    <h2>Login</h2>
     <article>
         <?php
         //Si la session est active = déconnecter
@@ -33,7 +33,13 @@ $titre="BLAColoc - Login";
             else
             {
               if(isset($resultat)){
-                if ($resultat == 4){
+                if ($resultat > 0){
+                echo "<div class='alert alert-danger'>";
+                }
+                if ($resultat == 5) {
+                  echo "le <strong>captcha</strong> n'était pas valide.";
+                }
+                elseif ($resultat == 4){
                   echo "Fichier introuvable !";
                 }
                 elseif ($resultat == 3){
@@ -45,10 +51,20 @@ $titre="BLAColoc - Login";
                 elseif ($resultat == 1) {
                   echo "Le mot de passe est incorrect.";
                 }
+                elseif ($resultat == 0) {
+                  echo "<div class='alert alert-success'>";
+                  echo "Vous vous êtes bien inscrit ! Vous pouvez vous connecter à présent.";
+                  echo "</div>";
+                }
                 else {
                   echo "Une erreur inconnu s'est produit.";
                 }
+                if ($resultat > 0){
+                echo "</div>";
+                }
               }
+
+
             ?>
 
             <form class='form' method='POST' action="index.php?action=vue_login">
@@ -67,8 +83,12 @@ $titre="BLAColoc - Login";
                         </td>
                     </tr>
                     <tr>
-                        <td><input class="btn" type="submit" value="Login"><input class="btn" type="reset" value="Effacer"></td>
-                        <td></td>
+						<td></td>
+                        <td><div class="g-recaptcha" data-sitekey="6Lc6L08UAAAAALOJt6xF1OIQY9AvrJ6_7H0K6a3Y"></div></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="reset" value="Effacer"></td>
+                        <td><input class="btn" type="submit" value="Login"></td>
                     </tr>
                 </table>
             </form>

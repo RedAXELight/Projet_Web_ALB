@@ -30,7 +30,12 @@ try {
             case 'vue_appartement_details' :
                 details();
                 break;
-
+            case 'vue_inscription' :
+                inscription();
+                break;
+            case 'enregistrer' :
+                enregistrer();
+                break;
             default :
                 throw new Exception("Action non valide");
         }

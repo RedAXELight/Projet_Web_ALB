@@ -77,7 +77,7 @@
                 <li><a href="index.php">Accueil</a></li>
                 <?php endif; ?>
 
-                <?php if(@$_GET['action']=="vue_appartement") :?>
+                <?php if(@$_GET['action']=="vue_appartement" || @$_GET['action']=="vue_appartement_details") :?>
                 <li class="active"><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php else : ?>
                 <li><a href="index.php?action=vue_appartement">Appartements</a></li>

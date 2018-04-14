@@ -79,3 +79,8 @@ function details()
 {
     require 'vue/vue_appartement_details.php';
 }
+
+function ajouter()
+{
+    require 'vue/vue_ajout_appartement.php';
+}

@@ -36,6 +36,9 @@ try {
             case 'enregistrer' :
                 enregistrer();
                 break;
+            case 'vue_ajout_appartement' :
+                ajouter();
+                break;
             default :
                 throw new Exception("Action non valide");
         }

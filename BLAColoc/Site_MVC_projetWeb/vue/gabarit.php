@@ -39,12 +39,12 @@
   <link href="contenu/scripts/carousel/style.css" rel="stylesheet" type="text/css" />
   <link href="contenu/scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
 
-  <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Syncopate.css" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Abel.css" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Source+Sans+Pro.css" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Open+Sans.css" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Pontano+Sans.css" rel="stylesheet" type="text/css">
+  <link href="contenu/fonts/Oxygen.css" rel="stylesheet" type="text/css">
 
   <link href="contenu/styles/custom.css" rel="stylesheet" type="text/css" />
   <script src='https://www.google.com/recaptcha/api.js'></script>

@@ -17,7 +17,7 @@ $titre = "BLAColoc - Profil";
                     <th height="26" colspan="2" style="font-weight: bold ; font-size: large">Votre profil</th>
                 </tr>
                 <tr>
-                    <td width="129" rowspan="5"><img src="" width="129" height="129" alt="no image found"/></td>
+                    <td width="129" rowspan="5"><img src="..\contenu\images\Logo.png" width="129" height="129" alt="no image found"/></td>
                 </tr>
                 <tr>
                     <td style="text-align: center;vertical-align: middle; width: 20%;">

@@ -83,6 +83,19 @@
                 <li><a href="index.php?action=vue_appartement">Appartements</a></li>
                 <?php endif; ?>
 
+
+
+                  <?php if (isset($_SESSION['active'])) ://si une session vendeur est active, affiche "Ajouter un snow" dans le menu ?>
+
+                      <?php if((@$_GET['action']=="vue_ajout_appartement")||(!isset($_GET['action']))) :?>
+                          <li class="active"><a href="index.php?action=vue_ajout_appartement">Ajouter un appartement</a></li>
+                      <?php else : ?>
+                          <li><a href="index.php?action=vue_ajout_appartement">Ajouter un appartement</a></li>
+                      <?php endif; ?>
+
+                  <?php endif; ?>
+
+
                 <?php if (isset($_SESSION['active'])){ ?>
                   <?php if(@$_GET['action']=="vue_login") :?>
                       <li class="active"><a href="index.php?action=vue_login">Logout</a></li>

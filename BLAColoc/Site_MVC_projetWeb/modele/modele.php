@@ -27,39 +27,7 @@ function getBD()
 // Fonction : Récupérer les données des snows
 // Sortie : $resultats
 
-function getSnows()
-{
-    // Connexion à la BD et au serveur
-    $connexion = getBD();
 
-    // Création de la string pour la requête
-    $requete = "SELECT * FROM tblsurfs ORDER BY idsurf;";
-    // Exécution de la requête
-    $resultats = $connexion->query($requete);
-    return $resultats;
-}
-
-// ------------------------ Sélection d'un snow --------------------
-
-function getASnow($ID)
-{
-    $connexion = getBD();
-    $requete = "SELECT * FROM tblsurfs WHERE idsurf='" . $ID . "';";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
-
-// ------------------------ Ajouter un snow ------------------------
-
-function addSnowDB()
-{
-    $connexion = getBD();
-    $requete = "INSERT INTO tblsurfs (idsurf, marque, boots, type, disponibilite, statut) VALUES ('" . @$_POST['fID'] . "', '" . @$_POST['fMarque'] . "', '" . @$_POST['fBoots'] . "', '" . @$_POST['fType'] . "', '" . @$_POST['fDispo'] . "', '');";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
-
-// -----------------------------------------------------
 // Fonctions liées aux utilisateurs
 
 //login
@@ -204,3 +172,5 @@ function create_membre()
         @$_POST['erreur'] = 12;
     }
 }
+
+

@@ -39,6 +39,9 @@ try {
             case 'vue_ajout_appartement' :
                 ajouter();
                 break;
+            case 'vue_profil' :
+                profil();
+                break;
             default :
                 throw new Exception("Action non valide");
         }

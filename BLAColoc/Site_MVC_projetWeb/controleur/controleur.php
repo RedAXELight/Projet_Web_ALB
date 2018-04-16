@@ -67,7 +67,9 @@ function enregistrer()
     }
 }
 
-
+function profil(){
+    require "vue/vue_profil.php";
+}
 // ----------------- Fonctions en lien avec les appartements ---------------------
 
 function appartement()

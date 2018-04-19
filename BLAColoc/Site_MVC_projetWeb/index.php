@@ -42,6 +42,9 @@ try {
             case 'vue_profil' :
                 profil();
                 break;
+            case 'contact' :
+                mailsend();
+                break;
             default :
                 throw new Exception("Action non valide");
         }

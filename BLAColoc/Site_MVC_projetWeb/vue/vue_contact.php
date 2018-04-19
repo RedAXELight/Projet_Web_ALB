@@ -16,7 +16,7 @@ $titre="RentASnow - Contacts";
                     <h1>Un problème ? une requête ? Alors Contactez-nous!</h1>
                 </div>
             </header>
-            <form class="form" method="post" action="index.php?action=vue_contact&msg=<font style:'text-decoration:underline, color=red'>Le message a bien été envoyé!</h3></font>" enctype="multipart/form-data">
+            <form class="form" method="post" action="index.php?action=contact" enctype="multipart/form-data">
                 <table class="table table-hover ">
                     <tr>
                         <td style="width: 15%">Votre e-mail : </td>

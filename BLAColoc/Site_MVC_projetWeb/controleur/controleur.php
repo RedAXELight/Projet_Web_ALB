@@ -29,6 +29,20 @@ function erreur($e)
   require "vue/vue_erreur.php";
 }
 
+
+//Mail de contact
+function mailsend()
+{
+    if(isset($_POST['mail']) && isset ($_POST['sujet']) && isset ($_POST['contactMessage'])){
+
+        sendMail($_POST);
+        require "vue/vue_contact.php";
+    }
+    else {
+        require "vue/vue_contact.php";
+    }
+}
+
 // ----------------- Fonctions en lien avec login -------------------------
 
 function login(){

@@ -33,7 +33,7 @@ function erreur($e)
 //Mail de contact
 function mailsend()
 {
-    if(isset($_POST['mail']) && isset ($_POST['sujet']) && isset ($_POST['contactMessage'])){
+    if(isset($_POST['mail']) && isset ($_POST['sujet']) && isset ($_POST['message'])){
 
         sendMail($_POST);
         require "vue/vue_contact.php";

@@ -176,11 +176,12 @@ function create_membre()
 //Fonction de l'envoi de mail
 function sendMail($datamail)
 {
+    ini_set('SMTP', 'smtp.sunrise.ch');//remplacer le nom du smtp
     $to = 'Alexandre.baseia@cpnv.ch'/*; Brian.rodrigues-fraga@cpnv.ch'*/;
     $subject = $datamail['sujet'];
     $from = $datamail['mail'];
     $message = $datamail['contactMessage'];
-    $toSend = "Envoyé par : ".$from."\n".$message;
+    $toSend = "Envoyé par : ".$from."\n..".$message;
     $toSend = mb_convert_encoding($toSend, "UTF-8");
 
 

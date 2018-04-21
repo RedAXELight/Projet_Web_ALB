@@ -30,13 +30,16 @@ try {
             case 'vue_appartement_details' :
                 details();
                 break;
+            case 'vue_ajout_appartement' :
+                ajouter_appartement();
+				break;
             case 'vue_inscription' :
                 inscription();
                 break;
-            case 'enregistrer' :
+			case 'enregistrer' :
                 enregistrer();
                 break;
-            case 'vue_ajout_appartement' :
+			case 'vue_ajout_appartement' :
                 ajouter();
                 break;
             case 'vue_profil' :
@@ -44,6 +47,12 @@ try {
                 break;
             case 'contact' :
                 mailsend();
+				break;
+            case 'enregistrer' :
+                enregistrer();
+                break;
+            case 'ajouter_appartement' :
+                ajout_appartement();
                 break;
             default :
                 throw new Exception("Action non valide");

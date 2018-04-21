@@ -20,14 +20,162 @@ function getBD()
     return $connexion;
 }
 
+// ------------------------ Liste des Appartements-----------------------------
+
+
+function liste_appartement()
+{
+    $dataFileAppartementPath = "JSon/Appartements.json";
+    if (file_exists("$dataFileAppartementPath")) // the file already exists -> load it
+    {
+        $dataAppartement = json_decode(file_get_contents("$dataFileAppartementPath"));
+        @$_POST['erreur'] = 0;
+    }else {
+        @$_POST['erreur'] = 1;
+    }
+    return $resultat;
+}
+
+
+function addAppart(){
+
+    $adresse = @$_POST['adresse'];
+    $ddate = @$_POST['ddate'];
+    $ville = @$_POST['ville'];
+    $fdate = @$_POST['fdate'];
+    $NPA = @$_POST['NPA'];
+    $superficie = @$_POST['superficie'];
+    $description = @$_POST['description'];
+    $pieces = @$_POST['pieces'];
+    $prix = @$_POST['prix'];
+
+    $erreur = '0';
+    if (@$_FILES['AppImg']['name'][0] == ''){$erreur = 'aucune <strong>image(s)</strong> a été séléctionné !';}
+    if ($prix == ''){$erreur = 'le champ <strong>prix</strong> est incorrect !';}
+    if ($pieces == ''){$erreur = 'le nombre de <strong>pièces</strong> entrée est incorrect !';}
+    if ($description == ''){$erreur = 'le champ <strong>description</strong> est incorrect !';}
+    if ($superficie == ''){$erreur = 'le champ <strong>superficie</strong> est incorrect !';}
+    if ($NPA == ''){$erreur = 'le champ <strong>NPA</strong> est incorrect';}
+    if ($fdate == ''){$erreur = 'le champ <strong>date de fin</strong> est incorrect !';}
+    if ($ville == ''){$erreur = 'le champ ville est incorrect !';}
+    if ($ddate == ''){$erreur = 'le champ date de début est incorrect !';}
+    if ($adresse == ''){$erreur = 'le champ <strong>adresse</strong> est incorrect !';}
+
+
+    if ($erreur == '0'){
+      $dataFileAppartementPath = "JSon/Appartements.json";
+      if (file_exists("$dataFileAppartementPath")) // the file already exists -> load it
+      {
+          try {
+            // On essayes de récupérer le contenu existant
+            $data = file_get_contents("$dataFileAppartementPath");
+
+            if( !$data || strlen($data) == 0 ) {
+                // On crée le tableau JSON
+                $tableau_pour_json = array();
+            } else {
+                // On récupère le JSON dans un tableau PHP
+                $tableau_pour_json = json_decode($data);
+            }
+
+              $id = count($tableau_pour_json);
+              $id = $id + 1;
+
+              //image(s) (source : https://antoine-herault.developpez.com/tutoriels/php/upload/)
+              $erreur_img = 0;
+              foreach ($_FILES["AppImg"]["name"] as $i => $pImage) {
+                if ($erreur_img == 1){break;}
+                $dossier = './contenu/images/appartement/'.$id.'/';
+                $taille_maxi = 10000000; //en octet (mis 10 Mo)
+                $fichier = basename($_FILES['AppImg']['name'][$i]);
+                $extensions = array('.png', '.jpg', '.jpeg', '.JPG', '.JPEG', '.PNG');
+                $extension = strrchr($_FILES['AppImg']['name'][$i], '.');
+                $taille = filesize($_FILES['AppImg']['tmp_name'][$i]);
+                //Début des vérifications de sécurité...
+                if (!in_array($extension, $extensions)) //Si l'extension n'est pas dans le tableau
+                {
+                  $erreur = 'Vous devez uploader un fichier de type png, jpg ou jpeg !';
+                }
+                if($taille>$taille_maxi) //Si la taille du fichier est plus grand que 10Mo
+                {
+                  $erreur = 'Le fichier est trop gros...';
+                }
+                if ($erreur == '0') //S'il n'y a pas d'erreur, on upload
+                {
+                  //On formate le nom du fichier ici...
+                  $fichier = strtr($fichier,
+                  'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
+                  'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+                  $fichier = preg_replace('/([^.a-z0-9]+)/i', '-', $fichier);
+                  mkdir($dossier, 0755, true);
+                  if (move_uploaded_file($_FILES['AppImg']['tmp_name'][$i], $dossier . $i . $extension)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
+                  {
+                    $erreur_img = 0;
+                  } else //Sinon (la fonction renvoie FALSE).
+                  {
+                    $erreur_img = 1;
+                  }
+                }
+              }
+
+              if (($erreur_img == 0) && ($erreur == '0')){
+
+              $tableau_pour_json = json_decode($data, true);
+
+              $newappart = new stdClass();
+
+              $newappart -> idAppartment = $id;
+              $newappart -> aptAddress = $adresse;
+              $newappart -> aptNPA = $NPA;
+              $newappart -> aptCity = $ville;
+              $newappart -> aptRooms = $pieces;
+              $newappart -> aptSuperficy = $superficie;
+              $newappart -> aptPrice = $prix;
+              $newappart -> aptDescription = $description;
+              $newappart -> aptBeginDate = $ddate;
+              $newappart -> aptEndDate = $fdate;
+              $newappart -> aptActive = 1;
+              $newappart -> aptidClient = $_SESSION['idClient'];
+
+              $tableau_pour_json [] = $newappart;
+
+              // On réencode en JSON
+              $contenu_json = json_encode($tableau_pour_json);
+
+              // On stocke tout le JSON
+              file_put_contents("$dataFileAppartementPath", $contenu_json);
+            }
+          }catch( Exception $e ) {
+            echo "Erreur : ".$e->getMessage();
+          }
+        }
+    }
+    return $erreur;
+  }
+//}
+
+
+// ------------------------ Sélection d'un snow --------------------
+
+function getASnow($ID)
+{
+    $connexion = getBD();
+    $requete = "SELECT * FROM tblsurfs WHERE idsurf='" . $ID . "';";
+    $resultat = $connexion->query($requete);
+    return $resultat;
+}
+
+// ------------------------ Ajouter un snow ------------------------
+
+function addSnowDB()
+{
+    $connexion = getBD();
+    $requete = "INSERT INTO tblsurfs (idsurf, marque, boots, type, disponibilite, statut) VALUES ('" . @$_POST['fID'] . "', '" . @$_POST['fMarque'] . "', '" . @$_POST['fBoots'] . "', '" . @$_POST['fType'] . "', '" . @$_POST['fDispo'] . "', '');";
+    $resultat = $connexion->query($requete);
+    return $resultat;
+}
+
 // -----------------------------------------------------
-// Fonctions liées aux snows
-
-// getSnows()
-// Fonction : Récupérer les données des snows
-// Sortie : $resultats
-
-
 // Fonctions liées aux utilisateurs
 
 //login
@@ -83,7 +231,8 @@ function getLogin($post)
 //inscription
 function create_membre()
 {
-    //require_once "recaptchalib.php";
+    //Source : Catarina et Johan
+    //Modifier : Brian
 
     $url = 'https://www.google.com/recaptcha/api/siteverify';
     $privatekey = "6Lc6L08UAAAAAJy7AtBX2RAnmSF37VC4elK928IC";

@@ -73,14 +73,11 @@ $titre="BLAColoc - Login";
                         <td scope="row">Login</td>
                         <td>
                             <input type="text" placeholder="Entrez votre login" name="fLogin" value="<?=@$_POST['fLogin'] ?>"/>
-                            <!-- code php pour éviter de retaper le contenu en cas d'erreur -->
                         </td>
                     </tr>
                     <tr>
                         <td scope="row">Mot de passe</td>
-                        <td>
-                            <input type="password" placeholder="Entrez votre mot de passe" name="fPass" value=""/>
-                        </td>
+                        <td><input type="password" placeholder="Entrez votre mot de passe" name="fPass" value=""/></td>
                     </tr>
                     <tr>
 						<td></td>

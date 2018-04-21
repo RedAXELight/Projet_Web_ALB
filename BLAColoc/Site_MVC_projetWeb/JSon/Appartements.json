@@ -1,10 +1,9 @@
 [
   {
-    "idApartment": 1,
+    "idAppartment": 1,
     "aptAddress": "Rue des fleurs bleues 33",
     "aptNPA": "1450",
     "aptCity": "Ste-croix",
-    "aptPhone": "0244456484",
     "aptRooms": "3.5",
     "aptSuperficy": "90",
     "aptPrice": "900",
@@ -15,11 +14,10 @@
     "aptidClient": "1"
   },
   {
-    "idApartment": 2,
+    "idAppartment": 2,
     "aptAddress": "Ch. des poiriers 12",
     "aptNPA": "1096",
     "aptCity": "Cully",
-    "aptPhone": "0234245456",
     "aptRooms": "",
     "aptSuperficy": "",
     "aptPrice": "",
@@ -30,11 +28,10 @@
     "aptidClient": "5"
   },
   {
-    "idApartment": 3,
+    "idAppartment": 3,
     "aptAddress": "Avenue XboxOne 64",
     "aptNPA": "1510",
     "aptCity": "moudon",
-    "aptPhone": "0254670909",
     "aptRooms": "",
     "aptSuperficy": "",
     "aptPrice": "",
@@ -45,11 +42,10 @@
     "aptidClient": "3"
   },
   {
-    "idApartment": 4,
+    "idAppartment": 4,
     "aptAddress": "Rue de la rivière liquide 12",
     "aptNPA": "1501",
     "aptCity": "Les Tavernes",
-    "aptPhone": "0244444554",
     "aptRooms": "",
     "aptSuperficy": "",
     "aptPrice": "",
@@ -60,11 +56,10 @@
     "aptidClient": "7"
   },
   {
-    "idApartment": 5,
+    "idAppartment": 5,
     "aptAddress": "Pavés solides",
     "aptNPA": "1000",
     "aptCity": "lausanne",
-    "aptPhone": "0240240204",
     "aptRooms": "",
     "aptSuperficy": "",
     "aptPrice": "",
@@ -73,5 +68,33 @@
     "aptActive": 1,
     "aptEndDate": "",
     "aptidClient": "5"
+  },
+  {
+    "idAppartment": 6,
+    "aptAddress": "rue du test 12",
+    "aptNPA": "1234",
+    "aptCity": "Testille",
+    "aptRooms": "6 1/2",
+    "aptSuperficy": "69",
+    "aptPrice": "999",
+    "aptDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nunc, euismod non ullamcorper nec, elementum eu metus. Maecenas viverra sapien et turpis porta, ac congue arcu egestas. In ornare eget elit non congue. Duis vehicula enim purus, eget venenatis mauris auctor nec. Nunc sem erat, iaculis eget viverra at, auctor sed nisl. \r\n\r\nCurabitur rhoncus urna a nunc condimentum, dignissim hendrerit nibh molestie. Quisque convallis vulputate elit ut elementum. Praesent condimentum neque in orci consequat, quis lobortis tortor pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula est, semper vitae nisi ac, eleifend ultricies erat. Ut ac mi sit amet metus tempor elementum sit amet ultrices orci. Curabitur ac dolor et mi egestas molestie. Proin tempor, elit ut iaculis mattis, libero neque vestibulum ante, nec semper augue sapien et sapien. Nulla at ante eleifend, finibus ligula eu, faucibus mauris. Quisque in felis vitae purus porta mattis eget finibus enim.",
+    "aptBeginDate": "2018-04-16",
+    "aptEndDate": "2018-04-21",
+    "aptActive": 1,
+    "aptidClient": 7
+  },
+  {
+    "idAppartment": 7,
+    "aptAddress": "rue du test 12",
+    "aptNPA": "1234",
+    "aptCity": "Testille",
+    "aptRooms": "6 1/2",
+    "aptSuperficy": "69",
+    "aptPrice": "999",
+    "aptDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna nunc, euismod non ullamcorper nec, elementum eu metus. Maecenas viverra sapien et turpis porta, ac congue arcu egestas. \r\n\r\nIn ornare eget elit non congue. Duis vehicula enim purus, eget venenatis mauris auctor nec. Nunc sem erat, iaculis eget viverra at, auctor sed nisl. Curabitur rhoncus urna a nunc condimentum, dignissim hendrerit nibh molestie. Quisque convallis vulputate elit ut elementum. Praesent condimentum neque in orci consequat, quis lobortis tortor pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula est, semper vitae nisi ac, eleifend ultricies erat. Ut ac mi sit amet metus tempor elementum sit amet ultrices orci. Curabitur ac dolor et mi egestas molestie. Proin tempor, elit ut iaculis mattis, libero neque vestibulum ante, nec semper augue sapien et sapien. Nulla at ante eleifend, finibus ligula eu, faucibus mauris. Quisque in felis vitae purus porta mattis eget finibus enim.",
+    "aptBeginDate": "2018-04-16",
+    "aptEndDate": "2018-04-21",
+    "aptActive": 1,
+    "aptidClient": 7
   }
 ]

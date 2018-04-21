@@ -88,6 +88,7 @@ function profil(){
 
 function appartement()
 {
+  $nombre = liste_appartement();
   require 'vue/vue_appartement.php';
 }
 
@@ -96,7 +97,12 @@ function details()
     require 'vue/vue_appartement_details.php';
 }
 
-function ajouter()
+function ajouter_appartement(){
+  require 'vue/vue_ajout_appartement.php';
+}
+
+function ajout_appartement()
 {
+    $erreur = addAppart();
     require 'vue/vue_ajout_appartement.php';
 }

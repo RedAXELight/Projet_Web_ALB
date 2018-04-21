@@ -25,21 +25,34 @@ $titre = 'BLAColoc - Nos appartements';
                 <div class="span4">
                     Mots d'image<!--Image de l'appartement-->
                 </div>
-.
+
                 <div class="span7">
                     Mots<!--Description de l'appart-->
                     <br>
                     <br>
                     <a href="index.php?action=vue_appartement_details">détails...</a>
                 </div>
-
             </div>
+
+            <?php if (@$_POST['erreur'] == 0){ ?>
+            <div class="span12">
+                <table class="table table-hover">
+                    <?php foreach ($resultat as $appartement) {
+                        echo "<tr>";
+                        echo "<td></td>";
+                        echo "<td></td>";
+                        echo "</tr>";
+                    } ?>
+                <table>
+            </div>
+        <?php }else{
+            echo "une erreur s'est produite !";
+        } ?>
 
             <div class="span12">
                 <hr/>
             </div>
         </div>
-
     </article>
 
 

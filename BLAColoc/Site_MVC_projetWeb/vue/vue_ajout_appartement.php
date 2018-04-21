@@ -48,7 +48,7 @@ $titre = 'BLAColoc - Ajout appartement';
                     <option>2</option>
                     <option>2 1/2</option>
                     <option>3</option>
-                    <option>34 1/2</option>
+                    <option>3 1/2</option>
                     <option>4</option>
                     <option>4 1/2</option>
                     <option>5</option>

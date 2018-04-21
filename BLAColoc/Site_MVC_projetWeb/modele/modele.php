@@ -27,39 +27,7 @@ function getBD()
 // Fonction : Récupérer les données des snows
 // Sortie : $resultats
 
-function getSnows()
-{
-    // Connexion à la BD et au serveur
-    $connexion = getBD();
 
-    // Création de la string pour la requête
-    $requete = "SELECT * FROM tblsurfs ORDER BY idsurf;";
-    // Exécution de la requête
-    $resultats = $connexion->query($requete);
-    return $resultats;
-}
-
-// ------------------------ Sélection d'un snow --------------------
-
-function getASnow($ID)
-{
-    $connexion = getBD();
-    $requete = "SELECT * FROM tblsurfs WHERE idsurf='" . $ID . "';";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
-
-// ------------------------ Ajouter un snow ------------------------
-
-function addSnowDB()
-{
-    $connexion = getBD();
-    $requete = "INSERT INTO tblsurfs (idsurf, marque, boots, type, disponibilite, statut) VALUES ('" . @$_POST['fID'] . "', '" . @$_POST['fMarque'] . "', '" . @$_POST['fBoots'] . "', '" . @$_POST['fType'] . "', '" . @$_POST['fDispo'] . "', '');";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
-
-// -----------------------------------------------------
 // Fonctions liées aux utilisateurs
 
 //login
@@ -203,4 +171,19 @@ function create_membre()
     }else{
         @$_POST['erreur'] = 12;
     }
+}
+
+//Fonction de l'envoi de mail
+function sendMail($datamail)
+{
+    ini_set('SMTP', 'smtp.sunrise.ch');//remplacer le nom du smtp
+    $to = 'Alexandre.baseia@cpnv.ch'/*; Brian.rodrigues-fraga@cpnv.ch'*/;
+    $subject = $datamail['sujet'];
+    $from = $datamail['mail'];
+    $message = $datamail['contactMessage'];
+    $toSend = "Envoyé par : ".$from."\n..".$message;
+    $toSend = mb_convert_encoding($toSend, "UTF-8");
+
+
+    mail($to, $subject, $toSend);
 }

@@ -88,12 +88,18 @@ function profil(){
 
 function appartement()
 {
-  $nombre = liste_appartement();
+  $liste = liste_appartement();
   require 'vue/vue_appartement.php';
 }
 
 function details()
 {
+    $idappart = @$_GET['id'];
+    $detailappartement = recupinfoappart($idappart);
+    $idclient = $detailappartement->aptidClient;
+    $idclient = strval($idclient);
+    $detailclient = recupinfouser($idclient);
+    $nbrImage = nombreimageappart($idappart)-1;
     require 'vue/vue_appartement_details.php';
 }
 

@@ -19,13 +19,11 @@ $titre = 'BLAColoc - ';//ajouter dynamiquement le nom de l'appart
   <!-- ________ SLIDER_ Appartements____________-->
   <div class="camera_full_width">
     <div id="camera_wrap">
-      <div data-src="contenu/slider-images/1.jpg">
-        <!--Pas oublier de lier les images du slider avec l'appart concerné -->
-      </div>
-      <div data-src="contenu/slider-images/2.jpg">
-      </div>
-      <div data-src="contenu/slider-images/3.jpg">
-      </div>
+      <?php
+      for($i=0; $i<=$nbrImage; $i++) {
+        echo "<div data-src='./contenu/images/appartement/".$detailappartement->idAppartment."/".$i.".jpg'></div>";
+      }
+      ?>
     </div>
     <br style="clear:both"/>
     <div style="margin-bottom:40px"></div>
@@ -35,14 +33,14 @@ $titre = 'BLAColoc - ';//ajouter dynamiquement le nom de l'appart
 <!-- ________ details appartement_____________-->
 <table class="table table-bordered">
   <tr>
-    <td style="width: 25%;"><strong>Nombre de pièces :</strong> 5.5</td>
-    <td style="width: 25%;"><strong>Adresse :</strong> Route de la choucroute 69</td>
-    <td style="width: 25%;"><strong>Ville :</strong> Corcelles-près-Payerne</td>
-    <td style="width: 25%;"><strong>CP :</strong> 1562</td>
+    <td style="width: 25%;"><strong>Nombre de pièces : </strong><?=$detailappartement->aptRooms ?></td>
+    <td style="width: 25%;"><strong>Adresse : </strong><?=$detailappartement->aptAddress ?></td>
+    <td style="width: 25%;"><strong>Ville : </strong><?=$detailappartement->aptCity ?></td>
+    <td style="width: 25%;"><strong>CP : </strong><?=$detailappartement->aptNPA ?></td>
   </tr>
 </table>
 <h4>Description : </h4>
-<pre>Description blapoaijgropiajergeoagrij<!--Description de l'appartement--></pre>
+<pre><?=$detailappartement->aptDescription ?></pre>
 <br/>
 <!-- asdf -->
 <div class="rows">
@@ -69,11 +67,11 @@ $titre = 'BLAColoc - ';//ajouter dynamiquement le nom de l'appart
         <tr>
           <th class="text-center"><h4><strong>Infos de utilisateur :</strong></h4></th>
         </tr>
-        <tr><td>Nom Prénom</td></tr>
-        <tr><td>Email</td></tr>
-        <tr><td>N° téléphone (faculatif)</td></tr>
-        <tr><td>Date du début</td></tr>
-        <tr><td>Date du fin</td></tr>
+        <tr><td><?=$detailclient->cltName ?><?=$detailclient->cltSurname ?></td></tr>
+        <tr><td><?=$detailclient->email ?></td></tr>
+        <tr><td><?=$detailclient->cltPhone ?></td></tr>
+        <tr><td><?=$detailappartement->aptBeginDate ?></td></tr>
+        <tr><td><?=$detailappartement->aptEndDate ?></td></tr>
     </table>
   </div>
 </div>

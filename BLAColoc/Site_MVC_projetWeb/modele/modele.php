@@ -4,21 +4,9 @@
  * User: Pascal.BENZONANA
  * Date: 08.05.2017
  * Time: 09:15
+ * modifier par Brian et alexandre
  */
 
-// ---------------------------------------------
-// getBD()
-// Fonction : connexion avec le serveur : instancie et renvoie l'objet PDO
-// Sortie : $connexion
-
-function getBD()
-{
-    // connexion au server de BD MySQL et à la BD
-    $connexion = new PDO('mysql:host=localhost; dbname=snows', 'root', '');
-    // permet d'avoir plus de détails sur les erreurs retournées
-    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    return $connexion;
-}
 
 // ------------------------ Liste des Appartements-----------------------------
 
@@ -28,14 +16,37 @@ function liste_appartement()
     $dataFileAppartementPath = "JSon/Appartements.json";
     if (file_exists("$dataFileAppartementPath")) // the file already exists -> load it
     {
-        $dataAppartement = json_decode(file_get_contents("$dataFileAppartementPath"));
+        $dataAppartements = json_decode(file_get_contents("$dataFileAppartementPath"));
         @$_POST['erreur'] = 0;
-    }else {
-        @$_POST['erreur'] = 1;
     }
-    return $resultat;
+    return $dataAppartements;
 }
 
+function recupinfoappart($idappart){
+    $dataFileAppartementPath = "JSon/Appartements.json";
+    if (file_exists("$dataFileAppartementPath")) // the file already exists -> load it
+    {
+        $dataAppartements = json_decode(file_get_contents("$dataFileAppartementPath"));
+        $dataappart = $dataAppartements[$idappart-1];
+    }
+    return $dataappart;
+}
+
+function recupinfouser($idclient){
+    $dataFileUsersPath = "JSon/Users.json";
+    if (file_exists("$dataFileUsersPath")) // the file already exists -> load it
+    {
+        $dataclients = json_decode(file_get_contents("$dataFileUsersPath"));
+        $dataclient = $dataclients[$idclient];
+    }
+    return $dataclient;
+}
+
+function nombreimageappart($idappart) {
+    $directory = "./contenu/images/appartement/".$idappart."/";
+    $filecount = count(glob($directory . "*.jpg"));
+    return $filecount;
+}
 
 function addAppart(){
 
@@ -153,27 +164,6 @@ function addAppart(){
     return $erreur;
   }
 //}
-
-
-// ------------------------ Sélection d'un snow --------------------
-
-function getASnow($ID)
-{
-    $connexion = getBD();
-    $requete = "SELECT * FROM tblsurfs WHERE idsurf='" . $ID . "';";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
-
-// ------------------------ Ajouter un snow ------------------------
-
-function addSnowDB()
-{
-    $connexion = getBD();
-    $requete = "INSERT INTO tblsurfs (idsurf, marque, boots, type, disponibilite, statut) VALUES ('" . @$_POST['fID'] . "', '" . @$_POST['fMarque'] . "', '" . @$_POST['fBoots'] . "', '" . @$_POST['fType'] . "', '" . @$_POST['fDispo'] . "', '');";
-    $resultat = $connexion->query($requete);
-    return $resultat;
-}
 
 // -----------------------------------------------------
 // Fonctions liées aux utilisateurs
